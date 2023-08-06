@@ -1,0 +1,12 @@
+directories:
+  output: dist
+  buildResources: build
+appId: your.app.id
+files:
+  - filter:
+      - index.js
+      - game.js
+      - Img/**
+win:
+  target: portable
+electronVersion: 13.1.7

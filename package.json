@@ -1,0 +1,30 @@
+{
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "description": "Your app description",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "13.1.7",
+    "electron-builder": "^24.6.3"
+  },
+  "build": {
+    "appId": "your.app.id",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "index.js",
+      "game.js",
+      "Img/**"
+    ],
+    "win": {
+      "target": "portable"
+    }
+  }
+}
